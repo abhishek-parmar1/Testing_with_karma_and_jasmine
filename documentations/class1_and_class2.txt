@@ -1,0 +1,8 @@
+program files:
+
+NOTES:
+1> Automated Testing: testing the code written at coding time by writing an external code to test it with different inputs.
+2> Types of test: 
+		 1> Unit Testing	: Testing in isolation with out any resources or testing a component in isolation without its template and any other resources.
+		 2> Integrity Testing	: Testing in isolation with external resources or testing a component in isolation with its template and any other resources.
+		 3> End to End Testing	: Complete testing of project as a whole.

@@ -1,0 +1,25 @@
+Program:
+	prog1
+NOTES:
+
+commands 
+	1> npm list -g --depth=0	: list all the node modules installed globally
+	2> install this modules list required for running karma	:
+								 - npm install -g karma
+								 - npm install -g karma-jasmine
+								 - npm install -g jasmine-core 
+								 - npm install -g requirejs
+								 - npm install -g karma-requirejs
+								 - npm install -g karma-cli
+								 - npm install -g phantomjs
+								 - npm install -g karma-chrome-launcher
+								 - npm install -g karma-phantomjs-launcher
+	3> karma init karma.conf.js 	: to create karma .conf.js file
+	4> karma start larma.conf.js	: to start karma
+
+1> karma.conf.js : this file is used  for configuration settings of karma. create it and start karma.
+1> testing file naming convention is test.spec.js
+2> using jasmine framework for testing. 
+3> describe() to bind tests for a particular function.
+4> it() to describe the various tests for the function.
+5> call the function and input the parameters and then get the result using expect().	
