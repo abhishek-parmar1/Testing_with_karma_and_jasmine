@@ -1,0 +1,5 @@
+Program	:
+	prog2
+
+NOTES:
+1> testing strings and arrays using toContain() of jasmine.
