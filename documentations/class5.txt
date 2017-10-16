@@ -1,0 +1,8 @@
+Program :
+	prog3
+NOTES:
+refer to the program also.
+1> beforeEach() : executes before each test.
+2> afterEach() : executes after each test.
+3> beforeAll() : executes ones before all test.
+4> afterAll() : executes ones after all test.
