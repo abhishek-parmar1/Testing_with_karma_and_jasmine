@@ -1,0 +1,16 @@
+PROGRAM	:
+	 prog4
+
+REFERENCES :
+
+1> https://www.pluralsight.com/guides/front-end-javascript/introduction-to-test-driven-development-in-javascript?aid=7010a000002BWq6AAG&promo=&oid=&utm_source=google&utm_medium=ppc&utm_campaign=APAC_Dynamic&utm_content=&utm_term=&gclid=Cj0KCQjw1JbPBRCrARIsAOKj2Pnw90r7LqnkoDuSuKj25-NWQnTea-L7r7LkerofJKEBe1lnKioPPEMaAs1REALw_wcB
+
+2> "use strict" : https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/
+
+3> https://johnresig.com/blog/ecmascript-5-objects-and-properties/
+
+4> https://johnresig.com/blog/ecmascript-5-objects-and-properties/
+
+NOTES	:
+
+1> test1 : returns the current time when called with no arguments
