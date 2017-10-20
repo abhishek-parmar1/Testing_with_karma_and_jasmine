@@ -9,7 +9,7 @@ REFERENCES :
 
 3> https://johnresig.com/blog/ecmascript-5-objects-and-properties/
 
-4> https://johnresig.com/blog/ecmascript-5-objects-and-properties/
+4> https://jasmine.github.io/2.4/introduction.html
 
 NOTES	:
 
