@@ -1,0 +1,12 @@
+PROGRAM :
+	prog7
+
+NOTES	:	
+
+1> nested describe()
+2> xdescribe() : these are not executed, pending.
+3> xit() : not executed, pending.
+	CASES :
+		- by using xit().
+		- it() without any function call.
+		- pending() method called in the it(). A string passed to pending will be treated as a reason and displayed when the suite finishes.
