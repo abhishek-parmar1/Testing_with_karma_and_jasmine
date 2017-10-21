@@ -1,0 +1,13 @@
+PROGRAM :
+	prog6
+
+NOTES	:
+
+1> fail() method
+2> combining the specs and multiple exceptations in a spec.
+3> setup and teardown using :
+				-beforeEach()
+				-afterEach()
+				-beforeAll()
+				-afterALL()
+4> this keyword used to share the variables or variables states between beforEach(), it() and afterEach() functions. Each spec has its own empty this variable,    different from other spec's.
