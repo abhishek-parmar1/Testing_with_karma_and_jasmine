@@ -103,7 +103,7 @@ describe("A spy, when configured to fake a return value", function() {
     };
 
     spyOn(foo, "getBar").and.returnValue(745);
-
+      
     foo.setBar(123);
     fetchedBar = foo.getBar();
       
@@ -160,6 +160,81 @@ describe("A spy, when configured to fake a series of return values", function() 
     expect(foo.getBar()).toEqual("fetched first");
     expect(foo.getBar()).toEqual("fetched second");
     expect(foo.getBar()).toBeUndefined();
+  });
+    
+});
+
+// spies with and.callFake
+
+describe("A spy, when configured with an alternate implementation", function() {
+  var foo, bar, fetchedBar;
+
+  beforeEach(function() {
+      
+    foo = {
+        
+      setBar: function(value) {
+        bar = value;
+      },
+        
+      getBar: function() {
+        return bar;
+      }
+        
+    };
+    
+    spyOn(foo, "getBar").and.callFake(function(arguments, can, be, received) {
+      return 1001;
+    });
+
+    foo.setBar(123);
+    fetchedBar = foo.getBar();
+      
+  });
+
+  it("tracks that the spy was called", function() {
+    expect(foo.getBar).toHaveBeenCalled();
+  });
+
+  it("should not affect other functions", function() {
+    expect(bar).toEqual(123);
+  });
+
+  it("when called returns the requested value", function() {
+    expect(fetchedBar).toEqual(1001);
+  });
+    
+});
+
+// spies with and.stub()
+
+describe("A spy", function() {
+  var foo, bar = null;
+
+  beforeEach(function() {
+      
+    foo = {
+      setBar: function(value) {
+        bar = value;
+      }
+        
+    };
+
+    spyOn(foo, 'setBar').and.callThrough();
+      
+  });
+
+  it("can call through and then stub in the same spec", function() {
+      
+    foo.setBar(123);
+    expect(bar).toEqual(123);
+
+    foo.setBar.and.stub();
+    bar = null;
+
+    foo.setBar(123);
+    expect(bar).toBe(null);
+      
   });
     
 });

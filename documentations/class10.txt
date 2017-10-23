@@ -3,10 +3,12 @@ PROGRAM :
 
 NOTES	:
 
-1> spyOn:  A spy can stub any function and tracks calls to it and all arguments. A spy only exists in the describe or it block in which it is defined, and will be                 removed after each spec.
+1> spyOn:  A spy can stub any function and tracks calls to it and all arguments. A spy only exists in the describe or it block in which it is defined, and will be                 removed after each spec. It will not execute the function implementation unless used with and.callThrough().
 2> toHaveBeenCalled() : matcher will return true if the spy was called.
 3> toHaveBeenCalledTimes() : matcher will pass if the spy was called the specified number of times.
 4> toHaveBeenCalledWith() : matcher will return true if the argument list matches any of the recorded calls to the spy.
-5> spies with and.callThrough() : track the function with its implementation also, chained with spyOn()
-6> spies with and.returnValue() :  all calls to the function will return a specific value or a fake value but not the function defined value.
+5> spies with and.callThrough() : track the function with its implementation also, chained with spyOn(), it will execute the whole implementation of the function.
+6> spies with and.returnValue() : all calls to the function will return a specific value or a fake value but not the function defined value.
 7> spies with and.returnVAlues() : all calls to the function will return specific values (fake values) in order until it reaches the end of the return values list, at                                    which point it will return undefined for all subsequent calls.
+8> spies with and.callFake() : all calls to the spy will delegate to the supplied function, If the function being spied on receives arguments that the fake needs, you                                can get those as well.
+9> spies with and.stub() : it will remove the effect of and.callThrough() from a function being initially spied using spyOn() and and.callThrough().
