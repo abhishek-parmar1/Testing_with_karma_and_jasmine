@@ -1,0 +1,16 @@
+PROGRAM :
+	 -prog9
+
+NOTES	:
+
+SMALL UTILITIES (tracking properties) WITH SPY METHOD :
+ALL the properties are attached to the calls property.
+1> .calls.any() :  returns false if the spy has not been called at all, and then true once at least one call happens.
+2> .calls.count() : returns the number of times the spy was called.
+3> .calls.argsFor(index) : index is the number of function call starting from 0. this function returns the arguments passed to call number index. returns in the form                            of an array. Take a look at example code.
+4> .calls.allArgs() : returns the arguments to all calls, returns the arguments in the form of object with keys in the form of index, index represents the call number                        of function.
+5> .calls.all() : returns the context (the this) and arguments passed all calls. it will give the "this" object of the function and arguments passed. Look at the code.
+6> .calls.mostRecent() : returns the context (the this) and arguments for the most recent call. look at the code example.
+7> .calls.first(): returns the context (the this) and arguments for the first call, look at the code example.
+8> misssing : look at documentation
+9> .calls.reset() : clears all tracking for a spy
