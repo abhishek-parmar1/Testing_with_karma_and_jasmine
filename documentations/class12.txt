@@ -1,0 +1,5 @@
+PROGRAM : 
+	 -prog10
+NOTES	:
+1> jasmine.createSpy() : When there is not a function to spy on, jasmine.createSpy can create a "bare" spy. This spy acts as any other spy - tracking calls, arguments,                          etc. But there is no implementation behind it. Spies are JavaScript objects and can be used as such. Look at the exapmle code.
+2> jasmine.createSpyObj() : In order to create a mock with multiple spies, use jasmine.createSpyObj and pass an array of strings. It returns an object that has a                             property for each string that is a spy.look at the code example.
