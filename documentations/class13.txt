@@ -1,0 +1,12 @@
+PROGRAM : 
+	 -prog12
+
+NOTES	:
+
+1> jasmine.any() : very use full in matching the type of function arguments. but can be used by with a spy.
+2> jasmine.anything() : return true if the actual value is not null or undefined, but can only be used with the spy.
+3> jasmine.objectContaining() : is for those times when an expectation only cares about certain key/value pairs in the actual.
+4> jasmine.arrayContaining() : is for those times when an expectation only cares about some of the values in an array.
+5> jasmine.stringMatching() : is for when you don't want to match a string in a larger object exactly, or match a portion of a string in a spy expectation.
+6> asymmetricMatch() : not implemented but simple, can view the documentation for it.
+
