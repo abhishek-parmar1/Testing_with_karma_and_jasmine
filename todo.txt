@@ -1,0 +1,2 @@
+1> test the js of songify
+2> test setTimeout and setInterval and eventhandlers in js
